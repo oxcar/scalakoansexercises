@@ -1,0 +1,9 @@
+.idea/
+.hg/
+target/
+.hgignore
+koans
+koans.bat
+koans.html
+README-scala.txt
+sbt-launch.jar
