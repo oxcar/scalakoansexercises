@@ -6,36 +6,36 @@ import support.KoanSuite
 class AboutEmptyValues extends KoanSuite {
 
   koan("None equals None") {
-    assert(None === __)
+    assert(None === None)
   }
 
   koan("None should be identical to None") {
     val a = None
     val b = None
-    assert(a eq __)
+    assert(a eq b)
   }
 
   koan("None can be converted to a String") {
-    assert(None.toString === __)
+    assert(None.toString === "None")
   }
 
   koan("An empty list can be represented by another nothing value: Nil") {
-    assert(List() === __)
+    assert(List() === Nil)
   }
 
   koan("None can be converted to an empty list") {
     val a = None
-    assert(a.toList === __)
+    assert(a.toList === Nil)
   }
 
   koan("None is considered empty") {
-    assert(None.isEmpty === __)
+    assert(None.isEmpty === true)
   }
 
   koan("None can be cast Any, AnyRef or AnyVal") {
-    assert(None.asInstanceOf[Any] === __)
-    assert(None.asInstanceOf[AnyRef] === __)
-    assert(None.asInstanceOf[AnyVal] === __)
+    assert(None.asInstanceOf[Any] === true)
+    assert(None.asInstanceOf[AnyRef] === true)
+    assert(None.asInstanceOf[AnyVal] === true)
   }
 
   koan("None cannot be cast to all types of objects") {
