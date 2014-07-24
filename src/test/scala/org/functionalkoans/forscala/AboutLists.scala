@@ -2,6 +2,7 @@ package org.functionalkoans.forscala
 
 import support.KoanSuite
 
+// FINALIZADO
 class AboutLists extends KoanSuite {
 
   koan("Eq tests identity (same object)") {
